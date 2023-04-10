@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <!-- YEAR, MONTH -->
+    <TextView
+        android:id="@+id/tv_year_and_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="2022년 5월"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#CCCCCC"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- DAY -->
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:gravity="center"
+            android:text="22일"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- EMOJI -->
+        <ImageView
+            android:id="@+id/iv_mood_tag"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/img_laugh_32" />
+
+        <!-- HASHTAG SUMMARY -->
+        <TextView
+            android:id="@+id/tv_summary_hashtag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="#예진 #대학동기 #카페 #파스타 #커피 #필라테스"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
